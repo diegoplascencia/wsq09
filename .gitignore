@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main (){
+  int n;
+  string rep; //se usa si para ver si el usuario quiere repetir el programa.
+  int fac=1;
+  do{
+    cout<< "introduzca un entero no negativo"<<endl;
+    cin>> n;
+     for(int i=n; i>0;i--){
+      	fac=fac*i;
+  	}
+    cout<< "EL FACTORIAL DE ESE NUMERO ES: "<< fac<< endl<<endl;
+    cout<< "QUIERE VOLVER A USAR EL PROGRAMA?(si/no)"<<endl;
+    cin>> rep;
+  }while(rep=="si");
+return 0;
+}
